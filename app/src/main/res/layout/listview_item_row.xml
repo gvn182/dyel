@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentTop="true"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txtTituloLinha"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Titulo"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        />
+
+    <TextView android:id="@+id/txtHistoriaLinha"
+        android:layout_width="280dp"
+        android:text="Historia"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTituloLinha"
+        android:layout_alignStart="@+id/txtTituloLinha"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#666666"
+        />
+
+    <TextView android:id="@+id/txtLikesLinha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="15k"
+        android:layout_toRightOf="@+id/txtHistoriaLinha"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+
+</RelativeLayout>
